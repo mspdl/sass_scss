@@ -1,3 +1,9 @@
+/* This comment will appear on the CSS file
+ *  Continuing
+ *  the
+ *  comment
+ *  100 + 20 = 120 */
+/*! This comment will be shown too */
 .container {
   background: #ddd;
   padding: 20px;
