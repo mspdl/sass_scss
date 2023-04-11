@@ -1,8 +1,12 @@
-div {
+div, main {
   background: #DDD;
 }
-div p {
-  color: lightblue;
+div p, div h2, main p, main h2 {
+  color: blue;
+}
+
+main .red-text {
+  color: red;
 }
 
 /*# sourceMappingURL=styles.css.map */
