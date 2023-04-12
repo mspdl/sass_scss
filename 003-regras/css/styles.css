@@ -9,4 +9,12 @@ main .red-text {
   color: red;
 }
 
+li {
+  color: purple;
+}
+
+ol > li {
+  color: darkgreen;
+}
+
 /*# sourceMappingURL=styles.css.map */
