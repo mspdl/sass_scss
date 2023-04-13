@@ -17,4 +17,28 @@ ol > li {
   color: darkgreen;
 }
 
+a {
+  text-decoration: none;
+  color: darkred;
+  transition: 0.5s;
+  padding: 10px;
+  border: 1px solid darkred;
+  display: block;
+  width: 150px;
+  text-align: center;
+}
+a:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.container {
+  background-color: #ccc;
+  padding: 20px;
+  margin: 20px;
+}
+.container-content {
+  color: red;
+}
+
 /*# sourceMappingURL=styles.css.map */
