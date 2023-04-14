@@ -73,4 +73,19 @@ a:hover {
   color: red;
 }
 
+.sub-title, .title {
+  border-bottom: 3px dotted red;
+  padding: 14px;
+  background-color: yellow;
+  text-align: center;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.sub-title {
+  font-size: 25px;
+}
+
 /*# sourceMappingURL=styles.css.map */

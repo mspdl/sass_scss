@@ -67,3 +67,17 @@ a
 
         &:hover
             color: red
+
+%base-title-style
+    border-bottom: 3px dotted red
+    padding: 14px
+    background-color: yellow
+    text-align: center
+
+.title
+    font-size: 30px
+    @extend %base-title-style
+
+.sub-title
+    font-size: 25px
+    @extend %base-title-style
