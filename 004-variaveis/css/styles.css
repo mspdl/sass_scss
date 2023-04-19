@@ -1,15 +1,16 @@
 h1 {
-  color: #660474;
+  color: #321;
   border: 2px solid red;
 }
 
 p {
-  color: #660474;
+  color: #321;
   border: 2px solid red;
+  font-size: 3rem;
 }
 
 a {
-  color: #660474;
+  color: #321;
 }
 
 div p {
