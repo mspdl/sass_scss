@@ -38,4 +38,24 @@ h2:hover {
   border-color: blue;
 }
 
+.esp-menor {
+  padding: 10px;
+  margin: 10px;
+}
+
+.esp-media {
+  padding: 15px;
+  margin: 15px;
+}
+
+.esp-maior {
+  padding: 25px;
+  margin: 25px;
+}
+
+.esp-maior-ainda {
+  padding: 50px;
+  margin: 50px;
+}
+
 /*# sourceMappingURL=styles.css.map */
