@@ -41,16 +41,19 @@ h2:hover {
 .esp-menor {
   padding: 10px;
   margin: 10px;
+  border: red solid 1px;
 }
 
 .esp-media {
   padding: 15px;
   margin: 15px;
+  border: blue dotted 4px;
 }
 
 .esp-maior {
   padding: 25px;
   margin: 25px;
+  border: solid green 1px;
 }
 
 .esp-maior-ainda {
