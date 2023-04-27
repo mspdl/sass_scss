@@ -1,26 +1,29 @@
 @import 'variables'
 @import 'button'
 @import 'mixins'
+@import 'plugins'
 
 body
     margin: 20px
 
 .p-esp
-    @include special
+    @extend %special
 
 h2
-    @include special
-    @include green
+    @extend %special
+    @extend %green
 
 .esp-menor
     @include espacamento(10px,10px)
     @include borda(solid, red)
     @include colors
+    @extend %font-pattern
 
 .esp-media
     @include espacamento(15px,15px)
     @include borda(dotted, blue, 4px)
     @include colors($background: #ddd)
+    @extend %font-pattern
 
 .esp-maior
     @include espacamento(25px,25px)

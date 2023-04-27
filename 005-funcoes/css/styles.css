@@ -6,11 +6,7 @@
   margin: 10px;
 }
 
-body {
-  margin: 20px;
-}
-
-.p-esp {
+h2, .p-esp {
   color: red;
   background-color: yellow;
   padding: 10px;
@@ -18,24 +14,24 @@ body {
   border-radius: 5px;
   transition: 0.3s;
 }
-.p-esp:hover {
+h2:hover, .p-esp:hover {
   color: blue;
   border-color: blue;
 }
 
 h2 {
-  color: red;
-  background-color: yellow;
-  padding: 10px;
-  border: 1px solid red;
-  border-radius: 5px;
-  transition: 0.3s;
   border-color: green;
   color: green;
 }
-h2:hover {
-  color: blue;
-  border-color: blue;
+
+.esp-media, .esp-menor {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 20px;
 }
 
 .esp-menor {
