@@ -34,3 +34,11 @@ h2
     $pad: 50px
     $mar: 50px
     @include espacamento($pad, $mar)
+
+.container-menor
+    width: 100px * ($medida + 2)
+    @include borda(solid, green)
+
+.container-maior
+    @include borda(solid, red)
+    width: 25rem * $medida
