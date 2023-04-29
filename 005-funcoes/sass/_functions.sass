@@ -1,0 +1,8 @@
+@function text-color($size)
+    $color: blue
+    @if $size > 10
+        $color: red
+    @return $color
+
+@function font-size-px($size)
+    @return #{$size + 'px'}

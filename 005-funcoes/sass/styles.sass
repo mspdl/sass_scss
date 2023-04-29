@@ -2,6 +2,7 @@
 @import 'button'
 @import 'mixins'
 @import 'plugins'
+@import 'functions'
 
 body
     margin: 20px
@@ -42,3 +43,13 @@ h2
 .container-maior
     @include borda(solid, red)
     width: 25rem * $medida
+
+    .fonte-pequena
+        $font-size: 5
+        font-size: font-size-px($font-size)
+        color: text-color($font-size)
+
+    .fonte-grande
+        $font-size: 25
+        font-size: font-size-px($font-size)
+        color: text-color($font-size)

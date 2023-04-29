@@ -72,5 +72,13 @@ body {
   border: red solid 1px;
   width: 100rem;
 }
+.container-maior .fonte-pequena {
+  font-size: 5px;
+  color: blue;
+}
+.container-maior .fonte-grande {
+  font-size: 25px;
+  color: red;
+}
 
 /*# sourceMappingURL=styles.css.map */
