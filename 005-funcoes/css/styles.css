@@ -81,4 +81,20 @@ body {
   color: red;
 }
 
+.container-borders div {
+  width: 200px;
+  height: 40px;
+  background-color: #DDD;
+  margin: 5px;
+}
+.container-borders .small-border {
+  border: 1px solid red;
+}
+.container-borders .medium-border {
+  border: 2px solid green;
+}
+.container-borders .big-border {
+  border: 3px dotted gold;
+}
+
 /*# sourceMappingURL=styles.css.map */

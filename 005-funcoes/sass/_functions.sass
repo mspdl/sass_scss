@@ -6,3 +6,13 @@
 
 @function font-size-px($size)
     @return #{$size + 'px'}
+
+@function custom-border($variation: 1)
+    $border: none
+    @if $variation <= 1
+        $border: 1px solid red
+    @else if $variation > 1 and $variation < 3
+        $border: 2px solid green
+    @else
+        $border: 3px dotted gold
+    @return $border

@@ -53,3 +53,17 @@ h2
         $font-size: 25
         font-size: font-size-px($font-size)
         color: text-color($font-size)
+
+.container-borders
+    div
+        width: 200px
+        height: 40px
+        background-color: #DDD
+        margin: 5px
+
+    .small-border
+        border: custom-border()
+    .medium-border
+        border: custom-border(2)
+    .big-border
+        border: custom-border(100)
