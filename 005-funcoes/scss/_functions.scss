@@ -1,0 +1,50 @@
+@function text-color($size) {
+    $color: blue;
+    @if ($size > 10) {
+        $color: red;
+    }
+    @return $color;
+}
+
+@function font-size-px($size) {
+    @return #{$size + "px"};
+}
+
+@function custom-border($variation: 1) {
+    $border: none;
+    $isUsing: "Você está usando #{$variation}";
+
+    @if ($variation < 1) {
+        @error "As variações tem que ser maiores do que 0. #{$isUsing}";
+    }
+
+    @if ($variation > 3) {
+        @warn "As variações de tamanho são apenas 1, 2 ou 3. #{$isUsing}";
+    }
+
+    @if ($variation <= 1) {
+        $border: 1px solid red;
+    } @else if ($variation > 1 and $variation < 3) {
+        $border: 2px solid green;
+    } @else {
+        $border: 3px dotted gold;
+    }
+    @return $border;
+}
+
+@function custom-width($width: 200px, $division: 2) {
+    @debug "O valor da divisão é #{$width / $division}";
+    @return $width / $division;
+}
+
+@function calc-func($x, $y) {
+    $result: 0;
+    @if ($x > $y) {
+        $result: red;
+    } @else if ($x < $y) {
+        $result: blue;
+    } @else {
+        $result: green;
+    }
+    @return $result;
+}

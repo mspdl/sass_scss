@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import "variables";
+@import "button";
+@import "mixins";
+@import "plugins";
+@import "functions";
+
+body {
+    margin: 20px;
+}
+
+.p-esp {
+    @extend %special;
+}
+
+h2 {
+    @extend %special;
+    @extend %green;
+}
+
+.esp-menor {
+    @include espacamento(10px, 10px);
+    @include borda(solid, red);
+    @include colors;
+    @extend %font-pattern;
+}
+
+.esp-media {
+    @include espacamento(15px, 15px);
+    @include borda(dotted, blue, 4px);
+    @include colors($background: #ddd);
+    @extend %font-pattern;
+}
+
+.esp-maior {
+    @include espacamento(25px, 25px);
+    @include borda(green);
+    @include colors($background: #321, $font: #fff);
+}
+
+.esp-maior-ainda {
+    $pad: 50px;
+    $mar: 50px;
+    @include espacamento($pad, $mar);
+}
+
+.container-menor {
+    width: 100px * ($medida + 2);
+    @include borda(solid, green);
+}
+
+.container-maior {
+    @include borda(solid, red);
+    width: 25rem * $medida;
+
+    .fonte-pequena {
+        $font-size: 5;
+        font-size: font-size-px($font-size);
+        color: text-color($font-size);
+    }
+
+    .fonte-grande {
+        $font-size: 25;
+        font-size: font-size-px($font-size);
+        color: text-color($font-size);
+    }
+}
+
+.container-borders {
+    div {
+        width: 200px;
+        height: 40px;
+        background-color: #ddd;
+        margin: 5px;
+    }
+    .small-border {
+        border: custom-border();
+        width: custom-width();
+        background-color: calc-func(5, 5);
+    }
+    .medium-border {
+        border: custom-border(2);
+        width: custom-width($width: 1000px);
+        background-color: calc-func(5, 10);
+    }
+    .big-border {
+        border: custom-border(100);
+        width: custom-width($division: 5);
+        background-color: calc-func(55, 10);
+    }
+}
+
+$fonts: 40px, 60px, 100px;
+
+@each $font in $fonts {
+    .title-#{$font} {
+        font-size: $font;
+        line-height: $font * 1.2;
+    }
+}
+
+@for $i from 1 through 3 {
+    .p-#{$i} {
+        background-color: #000;
+        padding: 10px;
+        border-radius: 5px;
+        @if $i == 1 {
+            color: lightblue;
+        } @else if $i == 2 {
+            color: lightgreen;
+        } @else if $i == 3 {
+            color: teal;
+        }
+    }
+}

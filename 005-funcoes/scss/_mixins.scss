@@ -1,0 +1,13 @@
+@mixin espacamento($p, $m) {
+    padding: $p;
+    margin: $m;
+}
+
+@mixin borda($color, $style: solid, $width: 1px) {
+    border: $style $color $width;
+}
+
+@mixin colors($font: #000, $background: #fff) {
+    color: $font;
+    background-color: $background;
+}
