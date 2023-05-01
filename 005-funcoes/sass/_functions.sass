@@ -9,9 +9,13 @@
 
 @function custom-border($variation: 1)
     $border: none
+    $isUsing: "Você está usando #{$variation}"
+
+    @if $variation < 1
+        @error "As variações tem que ser maiores do que 0. #{$isUsing}"
 
     @if $variation > 3
-        @error "Insira variações apenas 1, 2 ou 3"
+        @warn  "As variações de tamanho são apenas 1, 2 ou 3. #{$isUsing}"
 
     @if $variation <= 1
         $border: 1px solid red
