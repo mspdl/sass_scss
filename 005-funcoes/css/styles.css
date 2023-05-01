@@ -118,4 +118,25 @@ body {
   line-height: 120px;
 }
 
+.p-1 {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  color: lightblue;
+}
+
+.p-2 {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  color: lightgreen;
+}
+
+.p-3 {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  color: teal;
+}
+
 /*# sourceMappingURL=styles.css.map */
