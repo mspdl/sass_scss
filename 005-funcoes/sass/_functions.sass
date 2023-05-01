@@ -28,3 +28,13 @@
 @function custom-width($width: 200px, $division: 2)
     @debug "O valor da divisão é #{$width / $division}"
     @return $width / $division
+
+@function calc-func($x, $y)
+    $result: 0
+    @if $x > $y
+        $result: red
+    @else if ($x < $y)
+        $result: blue
+    @else
+        $result: green
+    @return $result

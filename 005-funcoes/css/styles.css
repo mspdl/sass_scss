@@ -90,14 +90,17 @@ body {
 .container-borders .small-border {
   border: 1px solid red;
   width: 100px;
+  background-color: green;
 }
 .container-borders .medium-border {
   border: 2px solid green;
   width: 500px;
+  background-color: blue;
 }
 .container-borders .big-border {
   border: 3px dotted gold;
   width: 40px;
+  background-color: red;
 }
 
 /*# sourceMappingURL=styles.css.map */
