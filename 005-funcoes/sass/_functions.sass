@@ -9,6 +9,10 @@
 
 @function custom-border($variation: 1)
     $border: none
+
+    @if $variation > 3
+        @error "Insira variações apenas 1, 2 ou 3"
+
     @if $variation <= 1
         $border: 1px solid red
     @else if $variation > 1 and $variation < 3
