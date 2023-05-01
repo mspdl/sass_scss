@@ -1,5 +1,5 @@
 @charset "UTF-8"
-    
+
 @import 'variables'
 @import 'button'
 @import 'mixins'
@@ -75,3 +75,10 @@ h2
         border: custom-border(100)
         width: custom-width($division: 5)
         background-color: calc-func(55, 10)
+
+$fonts: 40px, 60px, 100px
+
+@each $font in $fonts
+    .title-#{$font}
+        font-size: $font
+        line-height: $font * 1.2
