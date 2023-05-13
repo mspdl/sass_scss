@@ -1,4 +1,9 @@
-h1 {
-    color: red;
+@import "variables";
+@import "utilities";
+
+@include reset;
+
+p {
+    color: $primary-color;
     font-family: "Lato";
 }
