@@ -33,6 +33,27 @@
     text-align: center;
 }
 
+%center-bg {
+    background-size: cover;
+    background-position: center;
+}
+
+%card-hover {
+    .job-card-title,
+    .job-card-cover,
+    .job-card-description {
+        opacity: 0;
+    }
+
+    &:hover {
+        .job-card-title,
+        .job-card-cover,
+        .job-card-description {
+            opacity: 1;
+        }
+    }
+}
+
 .btn {
     padding: 0.6rem 1rem;
     border: 1px solid $light-color;
