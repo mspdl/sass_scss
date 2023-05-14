@@ -27,6 +27,12 @@
     text-shadow: 3px 2px $black;
 }
 
+%section-title {
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
 .btn {
     padding: 0.6rem 1rem;
     border: 1px solid $light-color;
