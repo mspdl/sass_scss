@@ -22,4 +22,32 @@ p {
   color: #ccc;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#navbar {
+  padding: 15px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 15px;
+}
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+}
+#navbar ul li {
+  margin: 0 10px;
+}
+#navbar ul li a {
+  color: #fff;
+  transition: 0.5s;
+}
+#navbar ul li a:hover {
+  color: #ccc;
+}
+
 /*# sourceMappingURL=main.css.map */
