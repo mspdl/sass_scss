@@ -27,4 +27,13 @@ $h: hidden;
 
 h2 {
     display: $h;
+    color: midnightblue;
 }
+
+@debug #f2ec44;
+@debug blue;
+@debug midnightblue;
+@debug rgb(201, 50, 124);
+@debug rgba(123, 231, 144, 0.8);
+@debug hsl(34, 50%, 92%);
+@debug #f5ece0;
