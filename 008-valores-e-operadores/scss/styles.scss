@@ -37,3 +37,15 @@ h2 {
 @debug rgba(123, 231, 144, 0.8);
 @debug hsl(34, 50%, 92%);
 @debug #f5ece0;
+
+$lista: 10, 20, 30;
+
+@each $valor in $lista {
+    @debug $valor + 1;
+}
+
+@each $font in $lista {
+    .p-#{$font} {
+        font-size: $font + "px";
+    }
+}
