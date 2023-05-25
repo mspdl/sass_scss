@@ -67,3 +67,23 @@ h3 {
         font-weight: $value;
     }
 }
+
+@debug false;
+@debug true;
+
+$verdadeiro: true;
+
+@debug $verdadeiro;
+
+@debug 10 > 2;
+@debug 10 < 2;
+
+@if 10 < 2 {
+    p {
+        color: red;
+    }
+} @else {
+    p {
+        color: blue;
+    }
+}
