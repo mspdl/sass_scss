@@ -15,4 +15,20 @@
   background-color: #4a5511;
 }
 
+.color-5 {
+  background-color: #313031;
+}
+
+.color-6 {
+  background-color: #373737;
+}
+
+.color-7 {
+  background-color: #4f1f33;
+  transition: 0.5s;
+}
+.color-7:hover {
+  background-color: #e5bbcd;
+}
+
 /*# sourceMappingURL=styles.css.map */

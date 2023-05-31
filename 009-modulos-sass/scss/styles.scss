@@ -25,3 +25,20 @@ $color-scale-2: color.scale($color-adjust-2, $lightness: 40%);
 .color-4 {
     background-color: color.invert($color-scale-2);
 }
+
+.color-5 {
+    background-color: color.mix(#123123, #4f2f3f);
+}
+
+.color-6 {
+    background-color: color.adjust(#4f1f33, $saturation: -60%);
+}
+
+.color-7 {
+    background-color: color.adjust(#4f1f33, $lightness: 0%);
+    transition: 0.5s;
+
+    &:hover {
+        background-color: color.adjust(#4f1f33, $lightness: 60%);
+    }
+}
