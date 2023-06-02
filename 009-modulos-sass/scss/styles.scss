@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:list";
 
 $color-adjust: color.adjust(#6b717f, $red: 25);
 $color-adjust-2: color.adjust(#6b717f, $red: 25, $blue: 100);
@@ -42,3 +43,20 @@ $color-scale-2: color.scale($color-adjust-2, $lightness: 40%);
         background-color: color.adjust(#4f1f33, $lightness: 60%);
     }
 }
+
+$lista: 10px, 20px, 30px;
+
+@debug "$lista" $lista;
+
+$lista: list.append($lista, 40px);
+
+@debug "$lista" $lista;
+
+@debug "list.index($lista, 20px)" list.index($lista, 20px);
+@debug "list.index($lista, 50px)" list.index($lista, 50px);
+
+@if (list.index($lista, 50px) == null) {
+    $lista: list.append($lista, 50px);
+}
+
+@debug "$lista" $lista;
