@@ -35,4 +35,15 @@ h1 {
   font-size: 40px;
 }
 
+h1 {
+  border: 2px solid red;
+}
+
+h1 {
+  transition: 1s;
+}
+h1:hover {
+  background-color: yellow;
+}
+
 /*# sourceMappingURL=styles.css.map */
