@@ -1,0 +1,42 @@
+@use "sass:list";
+
+$lista: 10px, 20px, 30px;
+
+@debug "$lista" $lista;
+
+$lista: list.append($lista, 40px);
+
+@debug "$lista" $lista;
+
+@debug "list.index($lista, 20px)" list.index($lista, 20px);
+@debug "list.index($lista, 50px)" list.index($lista, 50px);
+
+@if (list.index($lista, 50px) == null) {
+    $lista: list.append($lista, 50px);
+}
+
+@debug "$lista" $lista;
+
+$lista1: 10px, 20px;
+
+$lista2: 30px, 40px;
+
+$lista3: list.join($lista1, $lista2);
+
+@debug "$lista3" $lista3;
+
+@debug "list.length($lista)" list.length($lista);
+@debug "list.length($lista1)" list.length($lista1);
+@debug "list.length($lista2)" list.length($lista2);
+@debug "list.length($lista3)" list.length($lista3);
+
+@debug "list.nth($lista, 3)" list.nth($lista, 3);
+@debug "list.nth($lista, 5)" list.nth($lista, 5);
+
+$font-size-title: list.nth($lista3, 4);
+
+@debug "$font-size-title" $font-size-title;
+
+h1 {
+    font-size: $font-size-title;
+}

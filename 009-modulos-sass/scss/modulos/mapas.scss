@@ -1,0 +1,40 @@
+@use "sass:map";
+
+$m: (
+    "font": 3px,
+    "color": blue,
+    "bold": false,
+);
+
+$n: (
+    "border": 2px solid red,
+    "transition": 1s,
+);
+
+@debug "$m" $m;
+@debug "$n" $n;
+
+$x: map.merge($m, $n);
+
+@debug "$x" $x;
+
+$border-title: map.get($x, "border");
+
+h1 {
+    border: $border-title;
+}
+
+@debug "$border-title" $border-title;
+
+@debug "map.has-key($x, 'transition')" map.has-key($x, "transition");
+@debug "map.has-key($x, 'teste')" map.has-key($x, "teste");
+
+@if map.has-key($x, "transition") {
+    h1 {
+        transition: map.get($x, "transition");
+
+        &:hover {
+            background-color: yellow;
+        }
+    }
+}
