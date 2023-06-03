@@ -1,0 +1,17 @@
+@use "sass:math";
+
+@debug "math.$pi" math.$pi;
+
+@debug "math.ceil(10.1)" math.ceil(10.1);
+@debug "math.floor(10.1)" math.floor(10.1);
+
+$a: 1, 2, 3, 4, 5;
+
+@debug "$a =" $a;
+@debug "math.max($a...)" math.max($a...);
+@debug "math.min($a...)" math.min($a...);
+
+@debug "math.random()" math.random();
+
+@debug "trazer um número aleatório de 1 a 10";
+@debug "math.floor(math.random() * 10 + 1)" math.floor(math.random() * 10 + 1);
