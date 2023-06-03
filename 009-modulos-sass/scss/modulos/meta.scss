@@ -1,0 +1,27 @@
+@use "sass:meta";
+
+$a: 1, 2, 3, 4, 5;
+
+@debug "$a" $a;
+@debug "meta.global-variable-exists('a')" meta.global-variable-exists("a");
+@debug "meta.global-variable-exists('b')" meta.global-variable-exists("b");
+
+@debug "meta.inspect($a)" meta.inspect($a);
+
+@mixin test {
+    margin: 0;
+    padding: 0;
+}
+
+@debug "meta.mixin-exists('test')" meta.mixin-exists("test");
+
+@debug "meta.type-of(2)" meta.type-of(2);
+@debug "meta.type-of('string')" meta.type-of("string");
+@debug "meta.type-of(#DDD)" meta.type-of(#ddd);
+@debug "meta.type-of(bold)" meta.type-of(bold);
+@debug "meta.type-of(('name': 'Morgan'))"
+    meta.type-of(
+        (
+            "name": "Morgan",
+        )
+    );
