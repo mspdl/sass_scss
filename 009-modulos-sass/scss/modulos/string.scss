@@ -1,0 +1,15 @@
+@use "sass:string";
+
+$frase: "Morgan Espindola Software Engineer";
+
+@debug "$frase" $frase;
+@debug "string.index($frase, 'Software')" string.index($frase, "Software");
+@debug "string.index($frase, 'Brasil')" string.index($frase, "Brasil");
+
+@debug "string.length($frase)" string.length($frase);
+
+@debug "string.to-lower-case($frase)" string.to-lower-case($frase);
+@debug "string.to-upper-case($frase)" string.to-upper-case($frase);
+
+@debug "string.unique-id()" string.unique-id();
+@debug "string.unique-id()" string.unique-id();
