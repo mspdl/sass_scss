@@ -1,3 +1,5 @@
+@use "variables";
+
 html {
   font-size: 14px;
 }
@@ -11,14 +13,15 @@ html {
 }
 
 i {
-  color: #d10024;
+  color: variables.$primary-color;
 }
 
 a {
   text-decoration: none;
-}
-a:hover {
-  color: #d10024;
+
+  &:hover {
+    color: variables.$primary-color;
+  }
 }
 
 input {
@@ -29,5 +32,3 @@ input {
 li {
   outline: none;
 }
-
-/*# sourceMappingURL=base.css.map */
