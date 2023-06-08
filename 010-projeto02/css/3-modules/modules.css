@@ -1,3 +1,24 @@
-
+.btn {
+  padding: 8px 15px;
+  height: 40px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #d10024;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #d10024;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #d10024;
+}
+.btn-half {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-transform: none;
+}
 
 /*# sourceMappingURL=modules.css.map */

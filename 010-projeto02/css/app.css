@@ -6,7 +6,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Opens Sans";
+  font-family: "Open Sans";
   font-size: 1rem;
 }
 
@@ -28,6 +28,122 @@ input {
 
 li {
   outline: none;
+}
+
+header {
+  background-color: #15161d;
+}
+header .top {
+  background-color: #1e1f29;
+  color: #fff;
+}
+header .top .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+}
+header .top .container span {
+  margin-right: 1rem;
+}
+header .top .container i {
+  margin-right: 0.3rem;
+}
+header .top .container a {
+  color: #fff;
+}
+header .main .container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.3rem 0;
+}
+header .main .container a,
+header .main .container span,
+header .main .container i {
+  color: #fff;
+}
+header .main .container #brand {
+  font-weight: 900;
+  font-size: 3rem;
+}
+header .main .container #brand i {
+  color: #d10024;
+  font-size: 2rem;
+}
+header .main .container #search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}
+header .main .container #search-form input {
+  height: 40px;
+}
+header .main .container #search-form #search {
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding-left: 25px;
+  width: 60%;
+}
+header .main .container .actions-menu {
+  display: flex;
+  align-items: center;
+}
+header .main .container .actions-menu .wishlist-container,
+header .main .container .actions-menu .card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 2.5rem;
+}
+header .main .container .actions-menu .wishlist-container .qty,
+header .main .container .actions-menu .card-container .qty {
+  position: absolute;
+  top: -10px;
+  right: 2px;
+  background-color: #d10024;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .main .container .actions-menu .wishlist-container i,
+header .main .container .actions-menu .card-container i {
+  margin-bottom: 0.2rem;
+}
+header .main .container .actions-menu .wishlist-container a:hover,
+header .main .container .actions-menu .card-container a:hover {
+  color: #d10024;
+}
+
+.btn {
+  padding: 8px 15px;
+  height: 40px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #d10024;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid #d10024;
+  transition: 0.4s;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #d10024;
+}
+.btn-half {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  text-transform: none;
 }
 
 /*# sourceMappingURL=app.css.map */
