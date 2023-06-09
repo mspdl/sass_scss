@@ -27,6 +27,7 @@ input {
 }
 
 li {
+  list-style-type: none;
   outline: none;
 }
 
