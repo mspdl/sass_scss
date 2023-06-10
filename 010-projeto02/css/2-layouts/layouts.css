@@ -123,4 +123,22 @@ header .bottom ul li a:hover {
   padding: 3rem 0;
 }
 
+.products-grid {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.products-grid h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.products-grid .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
 /*# sourceMappingURL=layouts.css.map */
