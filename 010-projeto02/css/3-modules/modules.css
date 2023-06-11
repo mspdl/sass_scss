@@ -88,7 +88,7 @@
   align-items: center;
 }
 .card:hover {
-  border: #d10024;
+  border-color: #d10024;
 }
 .card .label {
   text-transform: uppercase;
