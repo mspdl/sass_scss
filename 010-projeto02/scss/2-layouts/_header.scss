@@ -9,6 +9,10 @@ header {
     background-color: variables.$secondary-bg-color;
     color: variables.$light-color;
 
+    @include base-mixins.mobile {
+      display: none;
+    }
+
     .container {
       @include layouts-mixins.center-content;
       padding: .8rem 0;
@@ -33,6 +37,11 @@ header {
       @include layouts-mixins.center-content;
       padding: 1.3rem 0;
 
+      @include base-mixins.mobile {
+        flex-direction: column;
+        align-items: center;
+      }
+
       a,
       span,
       i {
@@ -55,6 +64,11 @@ header {
         justify-content: center;
         width: 45%;
 
+        @include base-mixins.mobile {
+          width: 100%;
+          margin: 2rem 0;
+        }
+
         input {
           height: 40px;
         }
@@ -72,6 +86,10 @@ header {
         .wishlist-container,
         .card-container {
           @include layouts-mixins.header-icon;
+
+          @include base-mixins.mobile {
+            margin: 1rem;
+          }
         }
       }
     }
@@ -86,6 +104,10 @@ header {
       @include layouts-mixins.center-content;
       justify-content: left;
       padding: 1rem 0;
+
+      @include base-mixins.mobile {
+        display: none;
+      }
 
       li {
         margin-right: 1.3rem;

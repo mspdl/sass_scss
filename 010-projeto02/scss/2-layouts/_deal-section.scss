@@ -13,6 +13,13 @@
   height: 400px;
   padding: 2rem;
 
+  @include base-mixins.mobile {
+    background-size: 70%;
+    background-position-x: 120%;
+    background-position-y: 130%;
+    height: 700px;
+  }
+
   .content {
     height: 100%;
     flex-direction: column;
@@ -20,9 +27,19 @@
     @include layouts-mixins.center-content;
     justify-content: center;
 
+    @include base-mixins.mobile {
+      text-align: center;
+    }
+
     .timers {
       display: flex;
       margin-bottom: 2rem;
+
+      @include base-mixins.mobile {
+        flex-wrap: wrap;
+        align-self: center;
+        justify-content: center;
+      }
     }
 
     .timer {
@@ -36,6 +53,10 @@
       background-color: variables.$primary-color;
       color: variables.$light-color;
       margin: 0 1rem;
+
+      @include base-mixins.mobile {
+        margin-bottom: 1.5rem;
+      }
 
       .time {
         font-weight: bold;
