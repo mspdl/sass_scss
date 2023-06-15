@@ -11,3 +11,14 @@ p {
   font-style: normal;
   font-weight: 900;
 }
+
+h2 { /* seletor */
+  color: green; /* propriedade: valor; */
+  font-size: 50px; /* propriedade: valor; */
+  text-align: center; /* propriedade: valor; */
+}
+
+/*
+  Este é
+  um comentário
+*/
