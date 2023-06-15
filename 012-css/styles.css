@@ -5,3 +5,9 @@ h1 {
 p {
   color: green;
 }
+
+.forced-text {
+  color: black;
+  font-style: normal;
+  font-weight: 900;
+}
