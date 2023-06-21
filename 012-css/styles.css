@@ -22,3 +22,12 @@ h2 { /* seletor */
   Este é
   um comentário
 */
+
+/* Classes e Ids */
+#titulo-app {
+  font-size: 30px;
+}
+
+.p-texto {
+  color: blueviolet;
+}
