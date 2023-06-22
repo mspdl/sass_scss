@@ -1,21 +1,25 @@
 h1 {
-    color: red;
+  color: red;
 }
 
 p {
-    color: green;
+  color: green;
 }
 
 .forced-text {
-    color: black;
-    font-style: normal;
-    font-weight: 900;
+  color: black;
+  font-style: normal;
+  font-weight: 900;
 }
 
-h2 { /* seletor */
-    color: green; /* propriedade: valor; */
-    font-size: 50px; /* propriedade: valor; */
-    text-align: center; /* propriedade: valor; */
+h2 {
+  /* seletor */
+  color: green;
+  /* propriedade: valor; */
+  font-size: 50px;
+  /* propriedade: valor; */
+  text-align: center;
+  /* propriedade: valor; */
 }
 
 /*
@@ -25,11 +29,11 @@ h2 { /* seletor */
 
 /* Classes e Ids */
 #titulo-app {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .p-texto {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 /* Cores */
@@ -44,4 +48,17 @@ h2 { /* seletor */
 
 #rgba-cor {
   color: rgba(150, 23, 21, 0.5);
+}
+
+/* Backgrounds */
+
+.backgrounds {
+  background-image: url("img/sunset.webp");
+  height: 300px;
+}
+
+.titulo-background {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
 }
