@@ -12,14 +12,14 @@ p {
   font-weight: 900;
 }
 
+/* seletor */
 h2 {
-  /* seletor */
+  /* propriedade: valor; */
   color: green;
   /* propriedade: valor; */
   font-size: 50px;
   /* propriedade: valor; */
   text-align: center;
-  /* propriedade: valor; */
 }
 
 /*
@@ -37,7 +37,6 @@ h2 {
 }
 
 /* Cores */
-
 #nome-cor {
   color: purple;
 }
@@ -51,7 +50,6 @@ h2 {
 }
 
 /* Backgrounds */
-
 .backgrounds {
   background-image: url("img/sunset.webp");
   height: 300px;
@@ -61,4 +59,45 @@ h2 {
   background-color: #000;
   color: #fff;
   text-align: center;
+}
+
+/* Fontes */
+.fontes * {
+  color: #000;
+}
+
+.titulo-fontes {
+  font-size: 100px;
+}
+
+.familia {
+  font-size: 40px;
+}
+
+.serif {
+  font-family: "times new rome";
+}
+
+.sans-serif {
+  font-family: arial;
+}
+
+.monospace {
+  font-family: "Courier New";
+}
+
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.small-caps {
+  font-variant: small-caps;
 }
