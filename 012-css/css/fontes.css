@@ -1,0 +1,40 @@
+/* Fontes */
+.fontes * {
+  color: #000;
+}
+
+.titulo-fontes {
+  font-size: 100px;
+}
+
+.familia {
+  font-size: 40px;
+}
+
+.serif {
+  font-family: "times new rome";
+}
+
+.sans-serif {
+  font-family: arial;
+}
+
+.monospace {
+  font-family: "Courier New";
+}
+
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}

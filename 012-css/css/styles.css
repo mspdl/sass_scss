@@ -1,0 +1,50 @@
+h1 {
+  color: red;
+}
+
+p {
+  color: green;
+}
+
+.forced-text {
+  color: black;
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* seletor */
+h2 {
+  /* propriedade: valor; */
+  color: green;
+  /* propriedade: valor; */
+  font-size: 50px;
+  /* propriedade: valor; */
+  text-align: center;
+}
+
+/*
+  Este é
+  um comentário
+*/
+
+/* Classes e Ids */
+#titulo-app {
+  font-size: 30px;
+}
+
+.p-texto {
+  color: blueviolet;
+}
+
+/* Cores */
+#nome-cor {
+  color: purple;
+}
+
+#hexa-cor {
+  color: #87dd44;
+}
+
+#rgba-cor {
+  color: rgba(150, 23, 21, 0.5);
+}

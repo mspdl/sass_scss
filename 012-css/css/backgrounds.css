@@ -1,0 +1,11 @@
+/* Backgrounds */
+.backgrounds {
+  background-image: url("../img/sunset.webp");
+  height: 300px;
+}
+
+.titulo-background {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
