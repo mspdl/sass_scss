@@ -15,6 +15,7 @@
 }
 
 .relative {
+  /* Relativo ao elemento anterior */
   position: relative;
   background-color: blue;
   color: #fff;
@@ -23,6 +24,7 @@
 }
 
 .absolute {
+  /* Relativo ao elemento pai */
   position: absolute;
   background-color: purple;
   top: 0;
@@ -34,4 +36,13 @@
   width: 50px;
   top: 50px;
   left: 0;
+}
+
+.fixed {
+  /* Relativo ao viewport */
+  position: fixed;
+  height: 200px;
+  background-color: green;
+  bottom: 0;
+  right: 0;
 }
