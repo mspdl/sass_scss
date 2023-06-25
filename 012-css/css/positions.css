@@ -46,3 +46,10 @@
   bottom: 0;
   right: 0;
 }
+
+.sticky {
+  /* Estático até o scroll alcançar, depois se torna relativa ao viewport */
+  position: sticky;
+  background-color: orangered;
+  top: 50px;
+}
