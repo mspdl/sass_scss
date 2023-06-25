@@ -27,6 +27,10 @@ body {
   margin-bottom: 12px;
   margin-left: 7px;
   */
+  /* display: block; // padrão */
+  /* display: none; // esconde elemento */
+  /* display: inline; // mostra o elemento em linha, ignorando altura e largura */
+  display: inline-block;
 }
 
 .paragrafo-box {
