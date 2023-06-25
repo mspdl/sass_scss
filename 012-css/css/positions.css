@@ -1,0 +1,15 @@
+/* static (padrão) */
+/* relative */
+/* fixed */
+/* absolute */
+/* sticky */
+
+.position {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+}
+
+.static {
+  position: static;
+}
