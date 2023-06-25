@@ -13,3 +13,11 @@
 .static {
   position: static;
 }
+
+.relative {
+  position: relative;
+  background-color: blue;
+  color: #fff;
+  top: 100px;
+  left: 50px;
+}
