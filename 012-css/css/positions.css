@@ -1,9 +1,3 @@
-/* static (padrão) */
-/* relative */
-/* fixed */
-/* absolute */
-/* sticky */
-
 .position {
   width: 500px;
   height: 500px;
@@ -11,6 +5,7 @@
 }
 
 .static {
+  /* Padrão - estática ao conteúdo */
   position: static;
 }
 
