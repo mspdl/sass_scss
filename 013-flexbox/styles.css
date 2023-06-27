@@ -1,5 +1,6 @@
 .container {
   display: flex;
+  width: 1000px;
   background-color: #ddd;
 }
 
@@ -7,7 +8,6 @@
   width: 100px;
   height: 100px;
   margin: 10px;
-  border-radius: 8%;
 }
 
 .first {
@@ -16,8 +16,10 @@
 
 .second {
   background-color: green;
+  flex-grow: 1;
 }
 
 .third {
   background-color: brown;
+  flex-grow: 2;
 }
