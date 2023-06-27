@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  background-color: #ddd;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 8%;
+}
+
+.first {
+  background-color: blueviolet;
+}
+
+.second {
+  background-color: green;
+}
+
+.third {
+  background-color: brown;
+}
