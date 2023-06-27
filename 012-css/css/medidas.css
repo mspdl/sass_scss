@@ -1,0 +1,35 @@
+strong {
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.px-1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+.px-2 {
+  background-color: blue;
+  width: 500px;
+  height: 50px;
+}
+
+.pai-porcentagem {
+  width: 500px;
+  height: 500px;
+  background-color: black;
+}
+
+.porcentagem-1 {
+  width: 50%;
+  height: 50%;
+  background-color: orange;
+}
+
+.porcentagem-2 {
+  width: 50%;
+  height: 50%;
+  background-color: pink;
+}
