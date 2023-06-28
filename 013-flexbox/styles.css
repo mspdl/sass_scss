@@ -4,11 +4,24 @@
   background-color: #ddd;
 }
 
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
 .box {
+  width: 100px;
   height: 100px;
   margin: 10px;
   flex-grow: 1;
-  flex-basis: 500px;
+  flex-basis: 100px;
 }
 
 .first {
