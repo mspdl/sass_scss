@@ -24,17 +24,32 @@
   flex-basis: 100px;
 }
 
-.first {
+.first,
+.order-first {
   background-color: blueviolet;
   flex-shrink: 1;
 }
 
-.second {
+.second,
+.order-second {
   background-color: green;
   flex-shrink: 1;
 }
 
-.third {
+.third,
+.order-third {
   background-color: brown;
   flex-shrink: 2;
+}
+
+.order-first {
+  order: 1;
+}
+
+.order-second {
+  order: 2;
+}
+
+.order-third {
+  order: 3;
 }
