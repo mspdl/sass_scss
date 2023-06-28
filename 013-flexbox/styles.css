@@ -1,25 +1,27 @@
 .container {
   display: flex;
-  width: 1000px;
+  width: 100%;
   background-color: #ddd;
 }
 
 .box {
-  width: 100px;
   height: 100px;
   margin: 10px;
+  flex-grow: 1;
+  flex-basis: 500px;
 }
 
 .first {
   background-color: blueviolet;
+  flex-shrink: 1;
 }
 
 .second {
   background-color: green;
-  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .third {
   background-color: brown;
-  flex-grow: 2;
+  flex-shrink: 2;
 }
