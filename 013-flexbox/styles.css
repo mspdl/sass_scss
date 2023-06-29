@@ -20,8 +20,13 @@
   width: 100px;
   height: 100px;
   margin: 10px;
+  /*
   flex-grow: 1;
-  flex-basis: 100px;
+  flex-shrink: 1;
+  flex-basis: auto;
+  */
+  /* flex shorthand for the 3 attributes above */
+  flex: 1 1 auto;
 }
 
 .first,
