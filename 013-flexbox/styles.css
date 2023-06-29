@@ -4,6 +4,26 @@
   background-color: #ddd;
 }
 
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
 .row-reverse {
   flex-direction: row-reverse;
 }
@@ -23,10 +43,10 @@
   /*
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: auto;
+  flex-basis: 100px;
   */
   /* flex shorthand for the 3 attributes above */
-  flex: 1 1 auto;
+  /* flex: 1 1 100px; */
 }
 
 .first,
