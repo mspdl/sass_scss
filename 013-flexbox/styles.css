@@ -121,3 +121,11 @@
 .stretch {
   align-items: stretch;
 }
+
+.self-end {
+  align-self: end;
+}
+
+.self-center {
+  align-self: center;
+}
