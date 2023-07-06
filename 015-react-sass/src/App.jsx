@@ -1,7 +1,13 @@
+import MainContent from "./components/MainContent";
+import Sidebar from "./components/Sidebar";
+import "./styles/components/app.scss";
+
 function App() {
   return (
-    <div className="App">
-      <h1>React + SASS</h1>
+    <div id="portfolio">
+      <h1>Morgan Espindola</h1>
+      <Sidebar />
+      <MainContent />
     </div>
   );
 }
