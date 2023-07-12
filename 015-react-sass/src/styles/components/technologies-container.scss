@@ -1,0 +1,71 @@
+@use '../variables';
+@use '../mixins';
+
+.technologies-container {
+  margin-bottom: 1rem;
+
+  .technologies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    .tech-card {
+      gap: 1rem;
+      padding: 1rem;
+      border: 1px solid variables.$card-border-color;
+      width: 45%;
+      border-radius: variables.$card-border-radius;
+
+      .tech-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        svg {
+          font-size: 2rem;
+        }
+
+        h3 {
+          color: variables.$text-color;
+          margin-left: .5rem;
+        }
+      }
+    }
+
+    #html {
+      svg {
+        color: variables.$html-color;
+      }
+    }
+
+    #css {
+      svg {
+        color: variables.$css-color;
+      }
+    }
+
+    #js {
+      svg {
+        color: variables.$js-color;
+      }
+    }
+
+    #node {
+      svg {
+        color: variables.$node-color;
+      }
+    }
+
+    #mysql {
+      svg {
+        color: variables.$mysql-color;
+      }
+    }
+
+    #react {
+      svg {
+        color: variables.$react-color;
+      }
+    }
+  }
+}
